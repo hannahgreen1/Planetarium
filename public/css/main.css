@@ -1,0 +1,13 @@
+img {
+  height: 250px;
+  width: 350px;
+  text-align: center;
+}
+body{
+  text-align: center;
+  background: skyblue;
+}
+
+ul{
+  list-style-type: none;
+}

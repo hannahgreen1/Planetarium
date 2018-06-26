@@ -13,9 +13,12 @@ PlanetInfoView.prototype.bindEvents = function(){
 
 PlanetInfoView.prototype.render = function(planet){
   const infoParagraph = document.createElement('p');
-  infoParagraph.textContent = `The planet ${planet.name} is amazing`;
+  infoParagraph.textContent = `The planet ${planet.name} is amazing, it has a orbit of ${planet.orbit}. its days last ${planet.day} and it has ${planet.moons} moons`;
+  const planetPicture = document.createElement('img');
+  planetPicture.src = planet.image;
   this.container.innerHTML = '';
   this.container.appendChild(infoParagraph);
+  this.container.appendChild(planetPicture);
 };
 
 module.exports = PlanetInfoView;
