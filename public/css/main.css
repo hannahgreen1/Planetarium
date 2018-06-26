@@ -8,6 +8,12 @@ body{
   background: skyblue;
 }
 
-ul{
-  list-style-type: none;
+ul {
+    list-style-type: none;
+}
+
+/* Change the link color on hover */
+li:hover {
+    background-color: #555;
+    color: white;
 }
