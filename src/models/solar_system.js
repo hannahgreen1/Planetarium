@@ -15,7 +15,6 @@ SolarSystem.prototype.publishPlanetDetail = function(selectedPlanet){
  const planetFound = this.planets.find(function(element){
    return element.name == selectedPlanet;
  })
-  console.log(planetFound);
   PubSub.publish('Planets:selected-planet', planetFound)
 };
 
