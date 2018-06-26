@@ -8,7 +8,6 @@ SelectPlanet.prototype.bindEvents = function () {
   planet.addEventListener('click', (evt) => {
     const planetId = evt.target.id;
     PubSub.publish('InputView:planet-inputted', planetId)
-    console.log(planetId);
   })
 };
 
